@@ -13,39 +13,43 @@
     <main>
         <section id="inventory">
             <h2>Inventory Stocks</h2>
-            <input type="file" id="inventoryFile" />
-            <button onclick="uploadInventory()">I-upload ang Stocks</button>
-            <table id="inventoryTable">
+            <table id="inventory-table">
                 <thead>
                     <tr>
-                        <th>Item</th>
-                        <th>Kantidad</th>
+                        <th>Item Name</th>
+                        <th>Stock Level</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Inventory data goes here -->
+                    <!-- Dynamic rows will be loaded here -->
                 </tbody>
             </table>
+            <input type="file" id="file-input" accept=".csv, .xlsx, .pdf">
+            <button onclick="uploadFile()">Upload File</button>
+            <button onclick="addItem()">Add New Item</button>
         </section>
-        <section id="sales-forecast">
+
+        <section id="forecast">
             <h2>Sales Forecasting</h2>
-            <button onclick="generateSalesForecast()">I-generate ang Forecast</button>
-            <div id="forecastResults"></div>
+            <!-- Add your form and result here -->
         </section>
-        <section id="data-consolidation">
-            <h2>Data Consolidation</h2>
-            <div id="dataConsolidation"></div>
+
+        <section id="download">
+            <h2>Download Data</h2>
+            <a href="#" id="download-link">Download CSV</a>
         </section>
-        <section id="visualization">
-            <h2>Visualization</h2>
-            <canvas id="salesChart"></canvas>
+
+        <section id="consolidation">
+            <h2>Data Consolidation by Floor</h2>
+            <!-- Add consolidation data here -->
+        </section>
+
+        <section id="graphs">
+            <h2>Graphs</h2>
+            <!-- Include graphs here -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Joyce and Diana Worldwide Inc.</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
