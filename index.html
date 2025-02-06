@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyce and Diana Worldwide Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Joyce and Diana Worldwide Inc.</h1>
+    </header>
+    <main>
+        <section id="inventory">
+            <h2>Inventory Stocks</h2>
+            <input type="file" id="inventoryFile" />
+            <button onclick="uploadInventory()">I-upload ang Stocks</button>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Kantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Inventory data goes here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="sales-forecast">
+            <h2>Sales Forecasting</h2>
+            <button onclick="generateSalesForecast()">I-generate ang Forecast</button>
+            <div id="forecastResults"></div>
+        </section>
+        <section id="data-consolidation">
+            <h2>Data Consolidation</h2>
+            <div id="dataConsolidation"></div>
+        </section>
+        <section id="visualization">
+            <h2>Visualization</h2>
+            <canvas id="salesChart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Joyce and Diana Worldwide Inc.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
